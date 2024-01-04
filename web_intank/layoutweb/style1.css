@@ -1,0 +1,44 @@
+body{
+    font-family:'open sans',sans-serif ;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 0.4fr 0.6fr 1.4fr 1.3fr 1.2fr 1.1fr 1fr 1fr; */
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header header"
+    "header header header"
+    "sidebar sidebar"
+    "footer footer"; 
+    
+
+
+}
+
+header{
+    background-image: url(nabi.jpg);
+    grid-area: header;
+    background-color: rgb(212, 61, 61);
+
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(158, 40, 40);
+}
+aside {
+    grid-area: sidebar;
+    background-color: rgb(220, 226, 245);
+}
+
+.content{
+    grid-area: content;
+    background-color: rgb(95, 160, 104);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(105, 105, 105);
+}

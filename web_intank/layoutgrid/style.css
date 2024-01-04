@@ -1,0 +1,36 @@
+body {
+    font-family: 'open sans',sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "sidebar sidebar"
+    "footer footer";
+    
+}
+
+header{
+    grid-area: header;
+    background-color: aquamarine;
+}
+
+nav{
+    grid-area: nav;
+    background-color: lightslategrey;
+}
+aside {
+    grid-area: sidebar;
+    background-color: beige;
+}
+
+.content{
+    grid-area: content;
+    background-color: cadetblue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: aquamarine;
+}
